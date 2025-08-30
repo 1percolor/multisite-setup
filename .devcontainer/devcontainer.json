@@ -1,0 +1,29 @@
+{
+  "name": "WP Multisite Plugin Dev",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "wordpress",
+  "workspaceFolder": "/workspaces/wp-ms-plugin-starter",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "20" }
+  },
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php"
+      },
+      "extensions": [
+        "xdebug.php-pack",
+        "bmewburn.vscode-intelephense-client",
+        "junstyle.php-cs-fixer",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "mhutchie.git-graph",
+        "ms-playwright.playwright"
+      ]
+    }
+  },
+  "remoteEnv": {
+    "XDEBUG_MODE": "debug,develop"
+  }
+}

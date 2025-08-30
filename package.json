@@ -1,0 +1,28 @@
+{
+  "name": "acme-ms-plugin",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . && stylelint \"resources/**/*.css\"",
+    "format": "prettier -w .",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@playwright/test": "^1.47.0",
+    "@types/wordpress__block-editor": "^11.5.17",
+    "eslint": "^9.9.0",
+    "eslint-config-prettier": "^9.1.0",
+    "lint-staged": "^15.2.9",
+    "playwright": "^1.47.0",
+    "postcss": "^8.4.47",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.8.1",
+    "stylelint-config-standard": "^36.0.0",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.0",
+    "autoprefixer": "^10.4.20"
+  }
+}

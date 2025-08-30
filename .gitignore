@@ -1,0 +1,45 @@
+# Dependencies
+/vendor/
+/node_modules/
+/pnpm-lock.yaml
+/package-lock.json
+
+# WordPress
+/wp/
+/wp-config.php
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/backup-db/
+/wp-content/advanced-cache.php
+/wp-content/wp-cache-config.php
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/build/
+/dist/
+*.log
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+/coverage/
+/.nyc_output/
+/playwright-report/
+/test-results/
+
+# Temporary files
+*.tmp
+*.temp

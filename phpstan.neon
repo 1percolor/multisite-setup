@@ -1,0 +1,12 @@
+parameters:
+  level: 6
+  paths:
+    - src
+    - acme-ms-plugin.php
+  ignoreErrors:
+    - '#Call to an undefined method#'
+    - '#Call to an undefined function#'
+  bootstrapFiles:
+    - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php
+  autoload_files:
+    - vendor/php-stubs/wordpress-stubs/wordpress-stubs.php
